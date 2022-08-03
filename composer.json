@@ -1,0 +1,22 @@
+{
+    "name": "trilha/wj",
+    "description": "Sistema para a trilha 01 WebJump",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/",
+            "Core\\":"Core/"
+        },
+        "files":[
+            "config/Config.php" 
+        ]
+    },
+    "authors": [
+        {
+            "name": "SidSan97",
+            "email": "sidnei.soares@webjump.com.br"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    }
+}
