@@ -2,7 +2,7 @@
 
 namespace App\Models;
 use App\Models\Conexao;
-session_start();
+//session_start();
 
 class LoginModel extends Conexao
 {

@@ -37,8 +37,8 @@
                         if (isset($_SESSION['cliente_autenticado']) == false): ?>
                             <a class="nav-link text-light" href="?router=LoginController/login/">Login</a>
                         <?php else: 
-                            echo 'Olá, '.$_SESSION['nome_cliente']; 
-                    endif; 
+                            echo '<span class="nav-link text-dark"> Olá, '.explode(" ",$_SESSION['nome_cliente'])[0].'</span>'; 
+                        endif; 
                     ?>
                 </li>
             </ul>
