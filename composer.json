@@ -7,7 +7,7 @@
             "Core\\":"Core/"
         },
         "files":[
-            "config/Config.php" 
+            "config/ConfigTemplate.php" 
         ]
     },
     "authors": [
