@@ -37,6 +37,12 @@ class LoginModel extends Conexao
                         return false;
                     }
                 }
+                else {
+                    session_destroy();
+                    $_SESSION['cliente_autenticado'] = false; 
+                        
+                    return false;
+                }
             }
             else {
                 session_destroy();
