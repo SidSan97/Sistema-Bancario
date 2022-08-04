@@ -3,7 +3,7 @@ namespace Core;
 
 class Router
 {
-    private $controller = 'Controller';
+    private $controller = 'Controllers';
     private $method = 'home';
     private $param = [];
 
