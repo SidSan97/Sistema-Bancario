@@ -18,7 +18,7 @@ class Crud extends Conexao
             $bairro        = filter_input(INPUT_POST, 'bairro', FILTER_SANITIZE_SPECIAL_CHARS);
             $rua           = filter_input(INPUT_POST, 'rua', FILTER_SANITIZE_SPECIAL_CHARS);
             $numRua        = filter_input(INPUT_POST, 'numRua', FILTER_VALIDATE_INT);
-            $complemento   = /*filter_input(INPUT_POST, 'complemento', FILTER_SANITIZE_SPECIAL_CHARS)*/$_POST['complemento'];
+            $complemento   = filter_input(INPUT_POST, 'complemento', FILTER_SANITIZE_SPECIAL_CHARS);
             $email         = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
             $senha         = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_SPECIAL_CHARS);
             $senha2        = filter_input(INPUT_POST, 'senha2', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -30,6 +30,9 @@ class Crud extends Conexao
                 $erro = "Senhas diferentes";
                 throw new $erro;
                 die;
+            }
+            else {
+                $senha = password_hash($senha2, PASSWORD_BCRYPT);
             }
 
             $conn = $this->connect();

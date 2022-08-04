@@ -29,6 +29,10 @@
                 <li class="nav-item">
                     <a class="nav-link text-light" href="?router=Controllers/cadastrar/">Cadastro</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="?router=LoginController/login/">Login</a>
+                </li>
             </ul>
         </div>
     </nav>

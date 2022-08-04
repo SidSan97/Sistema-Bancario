@@ -84,12 +84,12 @@
 
                     <div class="col-lg-2 mb-1">
                         <label for="numRua">NÚMERO DA RUA</label>
-                        <input type="number" id="numRua" name="numRua" autofocus required>
+                        <input type="number" id="numRua" name="numRua" autofocus >
                     </div>
 
                     <div class="col-lg-5 mb-1">
                         <label for="complemento">COMPLEMENTO</label>
-                        <input type="number" id="complemento" name="complemento" autofocus>
+                        <input type="text" id="complemento" name="complemento" autofocus>
                     </div>
                 </div>
 
