@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\Crud;
 
-class Controllers
+class Controllers extends Crud
 {
     public function home()
     {
@@ -11,7 +12,7 @@ class Controllers
 
     public function cadastrar()
     {
-        //$cadastro = $this->create();
+        $cadastro = $this->create();
         require_once __DIR__ . '/../Views/cadastrar.php';
     }
 }
