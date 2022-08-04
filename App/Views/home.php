@@ -8,6 +8,8 @@
     <title>Home</title>
 </head>
 <body>
-    Home
+    <div class="container-fluid">
+        home
+    </div>
 </body>
 </html>
