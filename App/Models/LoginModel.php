@@ -26,7 +26,8 @@ class LoginModel extends Conexao
                     
                     if(password_verify($senha, $linha['senha'])) {
                         $_SESSION['cliente_autenticado'] = true;
-                        $_SESSION['id_cliente'] = $linha['id_correntista'];
+                        $_SESSION['id_cliente']   = $linha['id_correntista'];
+                        $_SESSION['nome_cliente'] = $linha['nome_razao_social'];
 
                         return true;
                     }

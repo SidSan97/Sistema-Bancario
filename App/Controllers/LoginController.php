@@ -16,4 +16,9 @@ class LoginController extends LoginModel
         else
             require_once __DIR__ . '/../Views/login.php';
     }
+
+    public function deslogar()
+    {
+        require_once __DIR__ . '/../Models/Logout.php';
+    }
 }
