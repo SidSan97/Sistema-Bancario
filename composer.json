@@ -1,6 +1,6 @@
 {
-    "name": "trilha/wj",
-    "description": "Sistema para a trilha 01 WebJump",
+    "name": "sistema/api",
+    "description": "Sistema bancário",
     "autoload": {
         "psr-4": {
             "App\\": "App/",
@@ -13,7 +13,7 @@
     "authors": [
         {
             "name": "SidSan97",
-            "email": "sidnei.soares@webjump.com.br"
+            "email": "sidnei1.8santiago@hotmail.com"
         }
     ],
     "require": {
