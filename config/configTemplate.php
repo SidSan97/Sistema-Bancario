@@ -25,11 +25,34 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="?router=Controllers/consulta/">Consulta</a>
+                    <a class="nav-link text-light" href="?router=Controllers/cadastrar/">Cadastro</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="?router=Controllers/cadastrar/">Cadastro</a>
+                    <?php 
+                        if (isset($_SESSION['cliente_autenticado']) == true): ?>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="?router=Controllers/consulta/">Consultar Extrato</a>
+                            </li>
+                    <?php endif; ?>
+                </li>
+
+                <li class="nav-item">
+                    <?php 
+                        if (isset($_SESSION['cliente_autenticado']) == true): ?>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="?router=SaqueController/saque/">Saque</a>
+                            </li>
+                    <?php endif; ?>
+                </li>
+
+                <li class="nav-item">
+                    <?php 
+                        if (isset($_SESSION['cliente_autenticado']) == true): ?>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="?router=Controllers/deposito/">Deposito</a>
+                            </li>
+                    <?php endif; ?>
                 </li>
 
                 <li class="nav-item">
