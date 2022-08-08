@@ -32,7 +32,7 @@
                     <?php 
                         if (isset($_SESSION['cliente_autenticado']) == true): ?>
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="?router=Controllers/consulta/">Consultar Extrato</a>
+                                <a class="nav-link text-light" href="?router=TransfController/transferir/">Transferir</a>
                             </li>
                     <?php endif; ?>
                 </li>
