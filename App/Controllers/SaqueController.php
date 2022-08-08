@@ -2,10 +2,13 @@
 
 namespace App\Controllers;
 
-class SaqueController
+use App\Models\SaqueModel;
+
+class SaqueController extends SaqueModel
 {
-    public function saque()
+    public function sacarValor()
     {
-        require_once __DIR__ . '/../Models/SaqueModel.php';
+        $valorSaque = $this->saque();
+        require_once __DIR__ . '/../Views/saque.php';
     }
 }

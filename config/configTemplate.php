@@ -41,7 +41,7 @@
                     <?php 
                         if (isset($_SESSION['cliente_autenticado']) == true): ?>
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="?router=SaqueController/saque/">Saque</a>
+                                <a class="nav-link text-light" href="?router=SaqueController/sacarValor/">Saque</a>
                             </li>
                     <?php endif; ?>
                 </li>
