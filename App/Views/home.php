@@ -9,10 +9,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        home <br>
-
-        <a href="?router=LoginController/deslogar/">sair</a>
-
+        home 
     </div>
 </body>
 </html>

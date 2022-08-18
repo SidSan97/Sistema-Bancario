@@ -7,14 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Faça sua transaçao aqui</h1> <br>
+    <div class="container">
+        <h1>Faça sua transaçao aqui</h1> <br>
 
-    <form action="?router=TransfController/transferir/" method="POST">
-        <input type="number" name="valorTransferencia" required placeholder="valor transf">
-        <input type="number" name="numContaDest" required placeholder="numero conta destino">
-        <input type="text" name="nomeRem" required placeholder="nome remetente">
+        <form action="?router=TransfController/transferir/" method="POST">
+            <input type="number" name="valorTransferencia" required placeholder="valor transf">
+            <input type="number" name="numContaDest" required placeholder="numero conta destino">
+            <input type="text" name="nomeRem" required placeholder="nome remetente">
 
-        <button type="submit" name="enviar" class="btn btn-primary"> Transferir </button>
-    </form>
+            <button type="submit" name="enviar" class="btn btn-primary"> Transferir </button>
+        </form>
+    </div>
 </body>
 </html>

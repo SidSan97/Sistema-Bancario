@@ -30,13 +30,6 @@
                     <button class="btn-login" name="logar" type="submit">ENTRAR</button>
                 </div>
             </div>
-
-            <?php
-                if(isset($_SESSION['cliente_autenticado']))
-                    echo 'logado';
-                else
-                    echo 'n logado';
-            ?>
         </div>
     </form>
 </body>

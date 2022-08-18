@@ -24,9 +24,12 @@
                     <a class="nav-link text-light" href="?router=Controllers/home/">Home <span class="sr-only">(current)</span></a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="?router=Controllers/cadastrar/">Cadastro</a>
-                </li>
+                <?php 
+                    if (isset($_SESSION['cliente_autenticado']) == false): ?>
+                    <li class="nav-item">
+                            <a class="nav-link text-light" href="?router=Controllers/cadastrar/">Cadastro</a>
+                    </li>
+                <?php endif; ?>
 
                 <li class="nav-item">
                     <?php 
@@ -60,10 +63,17 @@
                         if (isset($_SESSION['cliente_autenticado']) == false): ?>
                             <a class="nav-link text-light" href="?router=LoginController/login/">Login</a>
                         <?php else: 
-                            echo '<span class="nav-link text-dark"> Olá, '.explode(" ",$_SESSION['nome_cliente'])[0].'</span>'; 
+                            echo '<span class="nav-link text-dark"> Olá, '.explode(" ",$_SESSION['nome_cliente'])[0].'</span>';
                         endif; 
                     ?>
                 </li>
+
+                <?php 
+                    if (isset($_SESSION['cliente_autenticado']) == true): ?>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="?router=LoginController/deslogar/">Sair</a>
+                    </li>
+                <?php endif; ?>
             </ul>
         </div>
     </nav>
